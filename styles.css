@@ -4,6 +4,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-azul-efeito: #86bafa;
 }
 
 body {
@@ -23,6 +24,9 @@ body {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
+
 }
 
 .container {
@@ -38,6 +42,7 @@ body {
     color: var(--branco-pricipal);
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
@@ -53,4 +58,104 @@ body {
 .container__titulo {
     font-size: 28;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-pricipal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 3.5em 0 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-pricipal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-pricipal);
+}
+
+.rodape {
+    justify-content: center;                     /*Fazendo sozinha */
+}
+
+.rodape__logo {
+    display: block; /* Necessário para que o margin funcione corretamente */
+    margin: 0 auto 0.5em auto; /* Aumenta o espaço superior e diminui o espaço inferior */
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+    
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 3em 0 2em 0;
+    gap: 2em; /* Ajuste este valor para definir o espaço entre os itens */
+}
+
+.rodape__lista li a {    
+    text-decoration: none; /* Remove o sublinhado */
+    color: var(--branco-pricipal); /* Altere para a cor desejada */
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: red;
+}
+
+.rodape__texto {
+    text-align: center;
+    margin: 2em 4em;
 }
